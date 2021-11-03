@@ -1,0 +1,31 @@
+<?php
+
+// $host = "sql-server.k8s-l0kya73j";
+// $user = "todoopp";
+// $pass = "azerty";
+// $db = "todo";
+// $charset = "utf8";
+// $port = "3306";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "todo";
+$charset = "utf8";
+$port = "3306";
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
+
+//global $cnn;
+try {
+       $cnn = new PDO($dsn, $user, $pass, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+
+     if ($cnn) {
+        //echo "Connected to the $db database successfully!";
+        //die();
+    }
+
+} catch (Exception $e) {
+     die(" Erreur : ".$e->getMessage());
+}
+
+?>
