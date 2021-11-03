@@ -1,13 +1,7 @@
 <?php
 
-// $host = "sql-server.k8s-l0kya73j";
-// $user = "todoopp";
-// $pass = "azerty";
-// $db = "todo";
-// $charset = "utf8";
-// $port = "3306";
 $host = "localhost";
-$user = "root";
+$user = "";
 $pass = "";
 $db = "todo";
 $charset = "utf8";
